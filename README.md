@@ -142,8 +142,8 @@ Project ini dibuat untuk keperluan **pembelajaran dan pengembangan**. Bebas digu
 Mahasiswa Teknologi Informasi
 ---
 
-📧 Email: [your-email@example.com](mailto:syaiful21abdullah@gmail.com)
-🔗 GitHub: [https://github.com/username](https://github.com/SyaifulAsfort23)
+📧 Email: [Syaiful21abdullah@gmail.com](mailto:syaiful21abdullah@gmail.com)
+🔗 GitHub: [https://github.com/SyaifulAsfort23](https://github.com/SyaifulAsfort23)
 
 ---
 ⭐ Jangan lupa beri **star** 
