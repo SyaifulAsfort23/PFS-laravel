@@ -140,10 +140,14 @@ Project ini dibuat untuk keperluan **pembelajaran dan pengembangan**. Bebas digu
 
 **Syaiful**
 Mahasiswa Teknologi Informasi
-
-📧 Email: [](Syaiful21abdullah@gmail.com)
-🔗 GitHub: [](https://github.com/username)
-
 ---
 
+📧 Email: [your-email@example.com](mailto:syaiful21abdullah@gmail.com)
+🔗 GitHub: [https://github.com/username](https://github.com/SyaifulAsfort23)
+
+---
 ⭐ Jangan lupa beri **star** 
+
+
+
+
