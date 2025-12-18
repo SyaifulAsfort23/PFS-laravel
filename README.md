@@ -7,53 +7,147 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# 🛒 Laravel E-Commerce Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Sebuah aplikasi **E-Commerce berbasis Laravel** yang dikembangkan untuk memenuhi kebutuhan pembelajaran dan pengembangan sistem penjualan online modern. Project ini mencakup fitur manajemen produk, autentikasi pengguna, keranjang belanja, pemesanan, dan pembayaran.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📌 Fitur Utama
 
-## Learning Laravel
+* 🔐 Autentikasi (Login, Register, Logout)
+* 👤 Manajemen User (Admin & Customer)
+* 📦 Manajemen Produk (CRUD)
+* 🗂️ Kategori Produk
+* 🛒 Keranjang Belanja
+* 🧾 Checkout & Pemesanan
+* 💳 Metode Pembayaran (Transfer / Manual / QRIS *(opsional)*)
+* 📊 Dashboard Admin
+* 📱 Responsive Design
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🧰 Teknologi yang Digunakan
 
-## Laravel Sponsors
+* **Laravel** v12.x
+* **PHP** >= 8.2
+* **MySQL / MariaDB**
+* **Vite** v7
+* **Node.js** >= 20
+* **Blade Template**
+* **Bootstrap / Tailwind CSS** *(opsional)*
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ⚙️ Instalasi & Menjalankan Project
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 1️⃣ Clone Repository
 
-## Contributing
+```bash
+git clone https://github.com/SyaifulAsfort23/PFS-laravel.git
+cd nama-repo
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 2️⃣ Install Dependency Backend
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 3️⃣ Install Dependency Frontend
 
-## Security Vulnerabilities
+```bash
+npm install
+npm run dev
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 4️⃣ Konfigurasi Environment
 
-## License
+Salin file `.env.example` menjadi `.env`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+cp .env.example .env
+```
+
+Atur konfigurasi database pada file `.env`
+
+### 5️⃣ Generate App Key
+
+```bash
+php artisan key:generate
+```
+
+### 6️⃣ Migrasi & Seeder Database
+
+```bash
+php artisan migrate --seed
+```
+
+### 7️⃣ Jalankan Server Laravel
+
+```bash
+php artisan serve
+```
+
+Akses aplikasi melalui:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 👥 Akun Default (Seeder)
+
+| Role  | Email                                         | Password |
+| ----- | --------------------------------------------- | -------- |
+| Admin | [admin@example.com](mailto:admin@example.com) | password |
+| User  | [user@example.com](mailto:user@example.com)   | password |
+
+---
+
+## 📂 Struktur Direktori Penting
+
+```
+app/Http/Controllers   # Controller aplikasi
+app/Models             # Model Eloquent
+database/migrations    # Migrasi database
+database/seeders       # Seeder data
+resources/views        # Blade templates
+routes/web.php         # Routing web
+```
+
+---
+
+## 🚀 Pengembangan Selanjutnya (Roadmap)
+
+* 🔍 Fitur pencarian produk
+* ⭐ Review & Rating produk
+* 📦 Manajemen stok otomatis
+* 💳 Integrasi Payment Gateway (Midtrans / Xendit)
+* 📬 Notifikasi Email
+* 🧠 Rekomendasi produk berbasis AI
+
+---
+
+## 📝 Lisensi
+
+Project ini dibuat untuk keperluan **pembelajaran dan pengembangan**. Bebas digunakan dan dimodifikasi.
+
+---
+
+## 👨‍💻 Author
+
+**Syaiful**
+Mahasiswa Teknologi Informasi
+---
+
+📧 Email: [Syaiful21abdullah@gmail.com](mailto:syaiful21abdullah@gmail.com)
+🔗 GitHub: [https://github.com/SyaifulAsfort23](https://github.com/SyaifulAsfort23)
+
+---
+⭐ Jangan lupa beri **star** 
+
+
+
+
