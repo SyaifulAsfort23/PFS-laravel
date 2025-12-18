@@ -11,7 +11,9 @@
 <body>
     <div class="container mt-5">
         <h1>Daftar Produk</h1>
+        @role('admin')
         <a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Tambah Produk</a>
+        @endrole
 
         @if (session('success'))
         <div class="alert alert-success">
@@ -38,7 +40,10 @@
                     <td>{{ $product->description }}</td>
                     <td>Rp {{ number_format($product->price, 0, ',', '.') }}</td>
                     <td>{{ $product->category->name }}</td>
-                    <td>
+                    <td> 
+                    <a href="{{ route('products.show', $product->id) }}" class="btn btn-info btn-sm">lihat</a>
+
+                        @role('admin')
                         <a href="{{ route('products.edit', $product->id) }}" class="btn btn-warning btn-sm">Edit</a>
                         
                         <form action="{{ route('products.destroy', $product->id) }}" method="POST" style="display: inline-block;">
@@ -46,6 +51,7 @@
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
                         </form>
+                        @endrole
                     </td>
                 </tr>
                 @empty
